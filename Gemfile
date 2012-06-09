@@ -23,6 +23,7 @@ gem 'jquery-rails'
 
 group :production do
   # gems specifically for Heroku go here
+  gem 'therubyracer-heroku'
   gem "pg"
 end
 
