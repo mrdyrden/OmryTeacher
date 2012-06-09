@@ -21,6 +21,11 @@ end
 
 gem 'jquery-rails'
 
+group :production do
+  # gems specifically for Heroku go here
+  gem "pg"
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
