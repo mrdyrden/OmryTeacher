@@ -1,9 +1,9 @@
 Omryteacher::Application.routes.draw do
   resources :students
 
-  get "main/index"
+  get "students/index"
 
-  root to: 'main#index', as: 'index'
+  root to: 'students#index', as: 'index'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
