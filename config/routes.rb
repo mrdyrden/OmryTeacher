@@ -1,4 +1,6 @@
 Omryteacher::Application.routes.draw do
+  resources :students
+
   get "main/index"
 
   root to: 'main#index', as: 'index'
