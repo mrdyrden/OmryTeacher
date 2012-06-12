@@ -391,12 +391,21 @@ input:focus, textarea:focus {
 	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
 	}
 
+.new_student{
+position:relative;
+left: 200px;
+}
+
 .new_student label { 
+	position:relative;
+	left: 175px;
 	margin-left: 10px; 
 	color: #999999; 
 	}
 
 .submit input {
+	position:relative;
+	left: 80px;
 	width: auto;
 	padding: 9px 15px;
 	background: #617798;
