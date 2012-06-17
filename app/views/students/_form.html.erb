@@ -1,15 +1,16 @@
-<%= form_for(@student) do |f| %>
-  <% if @student.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@student.errors.count, "error") %> prohibited this student from being saved:</h2>
-
-      <ul>
-      <% @student.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+<div class="page">
+<div class="body">
+ <div class = "hero-unit">
+    <div class="logo_image">
+    <%= image_tag("omry_logo1.png", :id => "logo") %>
     </div>
-  <% end %>
+    <div class="featured">
+      <h2>עמרי עטר</h1>
+      <h3>מורה למתמטיקה לכל הגילאים</h3>
+      <p>מורה בבי"הס לפסיכומטרי, מלמד עצמו מגיל 0 בעל 30 שנות ניסיון</p>
+    </div>
+  <div id = "mail_form">
+<%= form_for(@student) do |f| %>
 
   <div class="field">
     <%= f.label :שם %>
@@ -27,3 +28,8 @@
     <%= f.submit 'צור קשר'%>
   </div>
 <% end %>
+  </div>
+  <div class="footer">
+
+  </div>
+</div> 
