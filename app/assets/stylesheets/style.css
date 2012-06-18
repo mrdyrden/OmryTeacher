@@ -12,6 +12,8 @@
 	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
 	}
 
+
+
 .body{
 	width: 940px;
 	margin: 0 auto;
@@ -26,9 +28,20 @@ input:focus, textarea:focus {
 	}
 
 .logo_image{
-	width:50%;
+	width:55%;
+	height:100%;
 	float:left;
+	background: url('omry_logo1.png');
+	background-repeat:no-repeat;
 }
+
+.logo_image:hover {
+	float:left;
+	background: url('omry_logo2.png');
+	background-repeat:no-repeat;
+}
+
+
 
 #form_error {
   background:pink;
@@ -43,7 +56,7 @@ input:focus, textarea:focus {
 }
 
 .hero-unit{
-	height: 600px;
+	height: 650px;
 }
 
 .new_student label { 
