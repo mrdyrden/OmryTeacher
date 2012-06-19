@@ -1,4 +1,5 @@
 class StudentsController < ApplicationController
+
   # GET /students
   # GET /students.json
   def index
@@ -45,11 +46,13 @@ class StudentsController < ApplicationController
     respond_to do |format|
       if @student.save
         UserMailer.welcome_email(@student).deliver
-        format.html { redirect_to students_path notice: 'Student was successfully created.' }
-        format.json { render json: @student, status: :created, location: @student }
+        format.js
+        #format.html { redirect_to students_path notice: 'Student was successfully created.' }
+        #format.json { render json: @student, status: :created, location: @student }
       else
-        format.html { render action: "new" }
-        format.json { render json: @student.errors, status: :unprocessable_entity }
+        format.js
+        #format.html { render action: "new" }
+        #format.json { render json: @student.errors, status: :unprocessable_entity }
       end
     end
   end

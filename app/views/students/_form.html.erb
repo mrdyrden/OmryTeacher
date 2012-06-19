@@ -1,35 +1,24 @@
-<div class="page">
-<div class="body">
- <div class = "hero-unit">
-    <div class="logo_image">
-    <!--<%= image_tag("omry_logo1.png", :id => "logo") %>-->
-    </div>
-    <div class="featured">
-      <h2>עמרי עטר</h1>
-      <h3>מורה למתמטיקה לכל הגילאים</h3>
-      <p>מורה בבי"הס לפסיכומטרי, מלמד עצמו מגיל 0 בעל 30 שנות ניסיון</p>
-    </div>
-  <div id = "mail_form">
-<%= form_for(@student) do |f| %>
+<%= form_for(@student,:remote => true) do |f| %>
 
-  <div class="field">
-    <%= f.label :שם %>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :אימייל %>
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :טלפון %>
-    <%= f.text_field :phone %>
-  </div>
-  <div class="submit">
-    <%= f.submit 'צור קשר'%>
-  </div>
+        <div class="field">
+          <%= f.label "שם" %>
+          <%= f.text_field :name %>
+        </div>
+        <div class="field">
+          <%= f.label "אימייל" %>
+          <%= f.text_field :email %>
+        </div>
+        <div class="field">
+          <%= f.label "טלפון" %>
+          <%= f.text_field :phone %>
+        </div>
+        <div class="submit" id="submit_button">
+          <%= f.submit 'צור קשר'%>
+          <div id="progress_bar" class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
 <% end %>
-  </div>
-  <div class="footer">
 
-  </div>
-</div> 

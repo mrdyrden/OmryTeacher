@@ -1,0 +1,6 @@
+# AJAX #
+- used this site as reference http://net.tutsplus.com/tutorials/javascript-ajax/using-unobtrusive-javascript-and-ajax-with-rails-3/
+
+- form is sent to server through ajax
+- added the before ajax in the js to validate the form at client side
+
