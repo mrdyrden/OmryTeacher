@@ -7,6 +7,10 @@ $(document).ready(function () {
       "student[phone]": {digits: true}
     }
   });
+
+  $("div#submit_button").click(function(){
+    $('#progress_bar').show();
+  });
 });
  
 
